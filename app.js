@@ -21,4 +21,18 @@ productos.push()
 
 let container = document.getElementById("container");
 
-/*  */
+/* for of para sumar iva y agregar al dom */
+
+for (constproducto of productos) {
+    productos.sumarIva();
+    let div = document.createElement("div");
+    div.className = "card"
+    ;
+    container.append(div)
+
+}
+
+/* variables */
+let carrito = [];
+let carritoDom = document.getElementById("carrito");
+let numeroCarrito = document.getElementById("numeroCarrito");
