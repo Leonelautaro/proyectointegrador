@@ -4,92 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Fotos</title>
     <!--SEO-->
     <meta name="keywords" content="fotografia, imagenes, redes sociales, diseño grafico, ecommerce, landscape, fotografia de paisaje, modelos, producto, fotografia de comida, food photography, moda, retrato">
     ><meta name="description" content="Pagina sobre fotografia y servicios fotograficos">
-    <!--Google Fonts-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@500&display=swap" rel="stylesheet">
-
-
-<title>Segovialeon fotografia</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
 </head>
-
-<body> <!--inicia header-->
-   
-    <header>
-       
-      
-        <h1>Segovia León  PHOTOGRAPHY</h1>
-        <h2>Fotógrafo</h2>
-        <h3>Retoucher/Filmmaker</h3>
-    
-        <!--termina header-->
-    
-    </header> 
-    
-
-
- <!--termina header-->
- <form id="formulario">
-    <div class="form-row">
-        <label for="full-name">Nombre</label>
-        <input type="text" id="full-name"  placeholder="" name="nombre" required>
-    
-
-
+<body>
+    <div class="page-nav">
+        <h1>Tienda de Fotos impresas</h1>
+        <button id="checkout" class="button-checkout" onclick="pay()">Pagar</button>
     </div>
-    <div class="form-row">
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="" name="email" required>
+    <div class="page-content">
+        <div class="product-container">
+            <h3>Mural 1,50mt X 90cm</h3>
+            <img src="imagenes/img1.jpg" />
+            <h1>$5000</h1>
+            <button class="button-add" onclick="add('product-1', 50)">Agregar</button>
+        </div>
 
+        <div class="product-container">
+            <h3>Cuadro 40cmX30cm</h3>
+            <img src="imagenes/img2.jpg" />
+            <h1>$1000</h1>
+            <button class="button-add" onclick="add('product-2', 300)">Agregar</button>
+        </div>
 
+        <div class="product-container">
+            <h3>Cuadro 40cmX30cm</h3>
+            <img src="imagenes/img3.jpg" />
+            <h1>$1300</h1>
+            <button class="button-add" onclick="add('product-3', 250)">Agregar</button>
+        </div>
 
+        <div class="product-container">
+            <h3>Mural 1,40mtX 80cm</h3>
+            <img src="imagenes/img4.jpg" />
+            <h1>$4800</h1>
+            <button class="button-add" onclick="add('product-4', 200)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>Cuadro20cmx30cm</h3>
+            <img src="imagenes/img5.jpg" />
+            <h1>$700</h1>
+            <button class="button-add" onclick="add('product-5', 10)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>Mural 2,20mtX1,50mt</h3>
+            <img src="imagenes/img6.jpg" />
+            <h1>$650</h1>
+            <button class="button-add" onclick="add('product-6', 650)">Agregar</button>
+        </div>
     </div>
-    <div class="form-row">
-        <label for="abstract"> Dejanos tu consulta</label>
-        <textarea name="textarea" id="abstract"></textarea>
-
-    </div>
-
-    <div class="form-row">
-        <button type="submit">Enviar</button>
-
-    </div>
-
-
-</form>
-
-
-
-
-<!--Inicio footer-->
- <footer>
-
-        <ul class="socialmedia"> 
-            <li>
-                <a href="https://instagram.com">instagram</a>
-            </li>
-
-            <li>
-                <a href="https://facebook.com">facebook</a>
-
-            </li>
-
-            <li>
-                <a href="https://whatsapp.com">whatsapp</a>
-
-            </li>
-         </ul>
-            
-</footer>
-
-<!--Fin de footer-->
-
-<script src="app.js"></script>
-
-
-
-
 </body>

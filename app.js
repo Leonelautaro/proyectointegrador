@@ -1,5 +1,13 @@
-let formulario = document.getElementById("formulario");
-formulario.addEventListener("submit",(e)=> {
-    e.preventDefault();
-console.log("Pronto recibiras respuesta");
-});
+let products = [];
+let total = 0;
+
+function add(product, price) {
+    console.log(product, price);
+    products.push(product);
+    total = total + price;
+    document.getElementById("checkout").innerHTML = `Pagar $${total}`
+}
+
+function pay() {
+    window.alert(products.join(", \n"));
+}
