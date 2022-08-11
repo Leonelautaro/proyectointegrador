@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: grey;
+}
+
+h1 {
+    text-align: center;
+
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 400px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: white;
+    margin: 10px 10px;
+}
+
+.img-card {
+    width: 150px;
+    height: auto;
+}
+.id.card {
+    font-size: 20px;
+    font-family:"Anton", sans-serif;
+}
+
+.title-card {
+    font-size: 40px;
+    font-family:"Anton", sans-serif;
+}
+
+.precio-card {
+    font-size: 30px;
+    font-family:"Anton", sans-serif;
+}
