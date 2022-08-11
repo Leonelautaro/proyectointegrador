@@ -4,63 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de Fotos</title>
-    <!--SEO-->
-    <meta name="keywords" content="fotografia, imagenes, redes sociales, diseño grafico, ecommerce, landscape, fotografia de paisaje, modelos, producto, fotografia de comida, food photography, moda, retrato">
-    ><meta name="description" content="Pagina sobre fotografia y servicios fotograficos">
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-    <script src="app.js"></script>
+    <title>Tienda de fotos impresas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="page-nav">
-        <h1>Tienda de Fotos impresas</h1>
-        <button id="checkout" class="button-checkout" onclick="pay()">Pagar</button>
-    </div>
-    <div class="page-content">
-        <div class="product-container">
-            <h3>Mural 1,50mt X 90cm</h3>
-            <img src="imagenes/img1.jpg" />
-            <h1>$5000</h1>
-            <button class="button-add" onclick="add('product-1', 50)">Agregar</button>
-        </div>
-
-        <div class="product-container">
-            <h3>Cuadro 40cmX30cm</h3>
-            <img src="imagenes/img2.jpg" />
-            <h1>$1000</h1>
-            <button class="button-add" onclick="add('product-2', 300)">Agregar</button>
-        </div>
-
-        <div class="product-container">
-            <h3>Cuadro 40cmX30cm</h3>
-            <img src="imagenes/img3.jpg" />
-            <h1>$1300</h1>
-            <button class="button-add" onclick="add('product-3', 250)">Agregar</button>
-        </div>
-
-        <div class="product-container">
-            <h3>Mural 1,40mtX 80cm</h3>
-            <img src="imagenes/img4.jpg" />
-            <h1>$4800</h1>
-            <button class="button-add" onclick="add('product-4', 200)">Agregar</button>
-        </div>
-
-        <div class="product-container">
-            <h3>Cuadro20cmx30cm</h3>
-            <img src="imagenes/img5.jpg" />
-            <h1>$700</h1>
-            <button class="button-add" onclick="add('product-5', 10)">Agregar</button>
-        </div>
-
-        <div class="product-container">
-            <h3>Mural 2,20mtX1,50mt</h3>
-            <img src="imagenes/img6.jpg" />
-            <h1>$650</h1>
-            <button class="button-add" onclick="add('product-6', 650)">Agregar</button>
-        </div>
-    </div>
+<header>
+</header>
+<h2>Productos</h2>
+<div id="container" class="container"></div>
+<h2>Carrito</h2>
+<div id="carrito" class="carrito">
+    <h4>Cantidad de productos en el carrito: <span id="numeroCarrito">0</span></h4>
+</div>
+    <script src="app.js"></script>
 </body>
+</html>
