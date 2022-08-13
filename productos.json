@@ -1,0 +1,37 @@
+[
+{"id":1,
+"title":"Foto impresa 1",
+"precio":1000,
+"url":"file:///C:/Users/leanl/Desktop/Proyecto%20final%20Js/imagenes/img1.webp"
+},
+
+{"id":2,
+"title":"foto impresa 2",
+"precio":2000,
+"url":"file:///C:/Users/leanl/Desktop/Proyecto%20final%20Js/imagenes/img2.webp"
+},
+
+{"id":3,
+"title":"Foto impresa 3",
+"precio":3000,
+"url":"file:///C:/Users/leanl/Desktop/Proyecto%20final%20Js/imagenes/img3.webp"
+},
+
+{"id":4,
+"title":"Foto impresa 4", 
+"precio":4000,
+"url":"file:///C:/Users/leanl/Desktop/Proyecto%20final%20Js/imagenes/img4.webp"
+},
+
+{"id":5,
+"title":"Foto Impresa 5",
+"precio":5000, 
+"url":"file:///C:/Users/leanl/Desktop/Proyecto%20final%20Js/imagenes/img5.webp"
+},
+
+{"id":6,
+"title":"Foto impresa 6",
+"precio":6000,
+"url":"file:///C:/Users/leanl/Desktop/Proyecto%20final%20Js/imagenes/img6.webp"}
+
+]

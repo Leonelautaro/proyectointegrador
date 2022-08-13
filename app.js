@@ -29,6 +29,20 @@ class Productos {
 /* array para el push de productos */
 const productos = [];
 
+/* Productos de Json */
+
+const obtenerProductos = async ()=>{
+
+    const resp = await fetch("file:///C:/Users/leanl/Desktop/Proyecto%20final%20Js/productos.json")
+    const data = await resp.json();
+    
+    data.forEach(el => {
+        productos.push(new Productos(el.id,el.title,el.precio,el.url))
+    });
+    
+    renderizarProductosAlDom()
+}
+
 productos.push(new Productos(1,"Foto impresa 1",1000,"file:///C:/Users/leanl/Desktop/Proyecto%20final%20Js/imagenes/img1.webp"));
 productos.push(new Productos(2,"foto impresa 2",2000,"file:///C:/Users/leanl/Desktop/Proyecto%20final%20Js/imagenes/img2.webp"));
 productos.push(new Productos(3,"Foto impresa 3",3000,"file:///C:/Users/leanl/Desktop/Proyecto%20final%20Js/imagenes/img3.webp"));
@@ -41,6 +55,8 @@ let container = document.getElementById("container");
 
 
 /* for para agregar al DOM */
+
+function renderizarProductosAlDom () {
 
 for(const producto of productos) {
     producto.sumarIva();
@@ -55,6 +71,7 @@ for(const producto of productos) {
     `;
 
     container.append(div)
+}    
 }
 
 /* variables */
@@ -115,3 +132,7 @@ function carritoLocalStorage () {
         carritoDom.append(div)
     }
 }
+
+/* Inicia  la funcion de productos del json */
+obtenerProductos()
+renderizarProductosAlDom()
